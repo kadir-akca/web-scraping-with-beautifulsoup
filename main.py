@@ -23,7 +23,7 @@ def get_link_brand(brand):
 
 
 # get the link of the researched model
-def get_link_model_in_brand(brand, model):
+def get_link_model_in_brand(brand, model): #func
     my_link = ""
     for i in range(10):
         req = requests.get(get_link_brand(brand) + "?page=" + str(i))
